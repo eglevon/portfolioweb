@@ -1,0 +1,17 @@
+.button {
+    background-color: inherit;
+
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    border: 3px solid var(--color-dark--1);
+
+    display: grid;
+    place-items: center;
+
+    cursor: pointer;
+
+    & img {
+        width: 1.1rem;
+    }
+}

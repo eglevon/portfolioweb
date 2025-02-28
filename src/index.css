@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-dark--0: #0a1520;
+    --color-dark--1: #0d1b2a;
+    --color-dark--2: #1b263b;
+
+    --color-blue--0: #293850;
+    --color-blue--1: #415a77;
+    --color-blue--2: #778da9;
+
+    --color-light--0: #c6ccd0;
+    --color-light--1: #c6ccd0;
+    --color-light--2: #e0e1dd;
+
+    --color-accent: #d3a757;
+
+    color-scheme: light dark;
+
+    &.dark {
+        --color-dark--1: #c6ccd0;
+        --color-dark--2: #e0e1dd;
+
+        --color-blue--1: #778da9;
+        --color-blue--2: #415a77;
+
+        --color-light--1: #0d1b2a;
+        --color-light--2: #1b263b;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: inherit;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+
+    color: var(--color-dark--1);
+    background: linear-gradient(125deg, var(--color-light--2) 60%, var(--color-blue--2));
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media (width >= 36em) {
+    body {
+        font-size: 1rem;
+    }
+}
+
+@media (width >=48em) {
+    body {
+        background: linear-gradient(90deg, var(--color-light--2) 60%, var(--color-blue--2));
+    }
+}
+
+@media (width >= 62em) {
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}

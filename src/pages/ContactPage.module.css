@@ -1,0 +1,67 @@
+.contact {
+    width: 85%;
+
+    padding-top: 3rem;
+    padding-left: 2rem;
+
+    & > h2 {
+        margin-left: 4rem;
+    }
+
+    & ul {
+        padding-top: 3rem;
+    }
+
+    & li {
+        padding-bottom: 2rem;
+    }
+
+    & a {
+        line-height: 2rem;
+
+        &:hover {
+            filter: brightness(0) saturate(100%) invert(31%) sepia(39%) saturate(502%) hue-rotate(172deg) brightness(95%) contrast(87%);
+        }
+    }
+
+    & img {
+        width: 1.5rem;
+        vertical-align: sub;
+    }
+
+    & span {
+        padding-left: 0.5rem;
+        vertical-align: super;
+    }
+}
+
+.contact a,
+.location {
+    color: var(--color-dark--1);
+    font-weight: 500;
+}
+
+@media (width >= 36em) {
+    .contact {
+        width: 65%;
+
+        padding-top: 4rem;
+        padding-left: 3rem;
+
+        & ul {
+            padding-top: 5rem;
+        }
+
+        & li {
+            padding-bottom: 3rem;
+        }
+
+        & img {
+            width: 2rem;
+        }
+
+        & span {
+            padding-left: 1.5rem;
+        }
+    }
+}

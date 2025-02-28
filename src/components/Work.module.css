@@ -1,0 +1,35 @@
+.work {
+    width: 80%;
+
+    & h3 {
+        padding-bottom: 3rem;
+    }
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+
+        padding-bottom: 3rem;
+    }
+
+    & ul {
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.7rem;
+
+        margin-left: 1rem;
+        list-style-type: disc;
+    }
+}
+
+.title {
+    font-weight: 700;
+}
+
+@media (width >= 48em) {
+    .work {
+        width: 55%;
+    }
+}

@@ -1,0 +1,85 @@
+.project {
+    width: 70%;
+    margin-inline: auto;
+
+    padding-bottom: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+
+    & a {
+        color: inherit;
+    }
+
+    & .image {
+        width: 15rem;
+        outline: 5px solid var(--color-blue--1);
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.1s ease-out;
+        }
+    }
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 0.8rem;
+
+    & li {
+        color: var(--color-light--1);
+        font-weight: 500;
+
+        padding: 0.3rem;
+        background-color: var(--color-blue--1);
+        border: 1px solid var(--color-blue--1);
+        border-radius: 9px 9px 9px 9px;
+    }
+}
+
+.link {
+    display: inline;
+    align-self: flex-end;
+
+    & img {
+        margin-left: 0.3rem;
+        width: 1.5rem;
+        vertical-align: middle;
+    }
+}
+
+@media (width >= 36em) {
+    .project {
+        padding-bottom: 6rem;
+
+        & .image {
+            width: 20rem;
+        }
+    }
+
+    .list {
+        column-gap: 1.5rem;
+        row-gap: 1rem;
+    }
+}
+
+@media (width >= 62em) {
+    .project {
+        width: 60%;
+        padding-bottom: 8rem;
+
+        & .image {
+            width: 30rem;
+        }
+    }
+}
+
+@media (width >= 75em) {
+    .project {
+        width: 50%;
+    }
+}

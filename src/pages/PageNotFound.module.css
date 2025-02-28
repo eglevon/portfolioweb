@@ -1,0 +1,21 @@
+.pageNotFound {
+    width: 70%;
+    margin-inline: auto;
+
+    & h2 {
+        padding-top: 4rem;
+        margin-left: 4rem;
+    }
+
+    & p {
+        padding-top: 2rem;
+
+        & a {
+            color: var(--color-dark--1);
+
+            &:hover {
+                color: var(--color-accent);
+            }
+        }
+    }
+}

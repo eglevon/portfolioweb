@@ -1,0 +1,36 @@
+.skills {
+    width: 90%;
+
+    & h3 {
+        padding-bottom: 3rem;
+    }
+
+    & > ul {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 1.3rem;
+        row-gap: 2.5rem;
+    }
+
+    & li {
+        display: flex;
+        align-items: center;
+        column-gap: 0.5rem;
+        width: 9rem;
+    }
+
+    & img {
+        width: 3rem;
+    }
+}
+
+@media (width >= 48em) {
+    .skills {
+        width: 55%;
+
+        & > ul {
+            column-gap: 3rem;
+            row-gap: 4rem;
+        }
+    }
+}

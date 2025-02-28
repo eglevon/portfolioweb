@@ -1,0 +1,36 @@
+.homepage {
+    padding-top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5rem;
+}
+
+.text {
+    & h1 {
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    & h2 {
+        text-align: center;
+    }
+}
+
+@media (width >= 48em) {
+    .homepage {
+        padding-top: 9rem;
+
+        display: flex;
+        flex-direction: row;
+        align-items: normal;
+        column-gap: 6rem;
+    }
+
+    .text {
+        width: 50%;
+
+        padding-top: 3rem;
+    }
+}

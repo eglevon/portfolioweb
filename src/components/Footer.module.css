@@ -1,0 +1,44 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    right: 0.5rem;
+
+    width: 9rem;
+    height: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.socials {
+    align-self: flex-end;
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.2rem;
+
+    & > li {
+        width: 1.7rem;
+    }
+
+    & a:hover {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(49%) saturate(564%) hue-rotate(172deg) brightness(84%) contrast(91%);
+    }
+}
+
+.date {
+    align-self: flex-end;
+
+    color: var(--color-dark--0);
+}
+
+@media (width >= 36em) {
+    .footer {
+        right: 1.5rem;
+    }
+
+    .socials {
+        column-gap: 2rem;
+    }
+}

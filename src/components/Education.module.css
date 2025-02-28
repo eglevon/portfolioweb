@@ -1,0 +1,26 @@
+.education {
+    width: 90%;
+
+    & h3 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    & li {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+
+        padding-bottom: 3rem;
+    }
+}
+
+.title {
+    font-weight: 700;
+}
+
+@media (width >= 48em) {
+    .education {
+        width: 65%;
+    }
+}

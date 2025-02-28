@@ -1,0 +1,23 @@
+.layout {
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    & main {
+        width: 80%;
+        margin-inline: auto;
+
+        margin-top: 2rem;
+        padding-bottom: 7rem;
+    }
+}
+
+@media (width >= 48em) {
+    .layout main {
+        width: 85%;
+
+        margin-top: 4rem;
+        padding-bottom: 9rem;
+    }
+}

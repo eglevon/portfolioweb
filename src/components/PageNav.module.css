@@ -1,0 +1,91 @@
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: start;
+
+    &.isOpen {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10;
+
+        width: 100%;
+        height: 100vh;
+
+        backdrop-filter: blur(0.3rem) brightness(80%);
+    }
+
+    & ul {
+        display: none;
+
+        &.isOpen {
+            display: block;
+            width: 45%;
+            min-width: 15rem;
+            height: 100vh;
+            background-color: var(--color-dark--0);
+            opacity: 1;
+
+            border-radius: 0 4rem 4rem 0;
+
+            padding-top: 4rem;
+            padding-left: 3rem;
+        }
+    }
+
+    & li {
+        padding-bottom: 3rem;
+    }
+
+    & a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 1.5rem;
+
+        color: var(--color-light--0);
+
+        &:hover {
+            filter: brightness(0) saturate(100%) invert(31%) sepia(39%) saturate(442%) hue-rotate(171deg) brightness(97%) contrast(93%);
+        }
+    }
+
+    & img {
+        width: 1.3rem;
+    }
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1.2rem;
+}
+
+nav.isOpen .btns {
+    padding-top: 1.5rem;
+    padding-right: 0.5rem;
+}
+
+@media (width >= 36em) {
+    .btns {
+        column-gap: 2rem;
+    }
+
+    nav.isOpen .btns {
+        padding-right: 1.5rem;
+    }
+}
+
+@media (width >= 48em) {
+    nav ul.isOpen {
+        width: 35%;
+    }
+}
+
+@media (width >= 75em) {
+    nav ul.isOpen {
+        width: 25%;
+    }
+}
