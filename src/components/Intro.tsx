@@ -4,7 +4,7 @@ function Intro() {
     return (
         <div className={styles.intro}>
             <div className={styles.introText}>
-                <h3>Hello! My name is EMV.</h3>
+                <h3>Hello! My name is EV.</h3>
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur magni minus quasi unde amet ut consectetur incidunt eos doloribus ea.</p>
 

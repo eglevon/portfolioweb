@@ -12,7 +12,7 @@ function Contact({ link, icon, iconLight, text }: ContactProps) {
 
     return (
         <li>
-            <a href={link}>
+            <a href={link} target='_blank'>
                 <img src={isDarkMode ? iconLight : icon} alt={text} />
                 <span>{text}</span>
             </a>

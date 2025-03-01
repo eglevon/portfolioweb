@@ -8,8 +8,11 @@
     display: grid;
     place-items: center;
 
+    transition-duration: 0.5s;
+
     &:hover {
-        animation: 1s bigger-btn;
+        width: 10rem;
+        height: 10rem;
     }
 }
 
@@ -34,46 +37,19 @@
     }
 }
 
-@keyframes bigger-btn {
-    0% {
-        width: 9rem;
-        height: 9rem;
-    }
-
-    50% {
-        width: 10rem;
-        height: 10rem;
-    }
-    100% {
-        width: 9rem;
-        height: 9rem;
-    }
-}
-
 @media (width >= 48em) {
     .outerCircle {
         width: 15rem;
         height: 15rem;
+
+        &:hover {
+            width: 16rem;
+            height: 16rem;
+        }
     }
 
     .innerCircle {
         width: 12rem;
         height: 12rem;
-    }
-
-    @keyframes bigger-btn {
-        0% {
-            width: 15rem;
-            height: 15rem;
-        }
-
-        50% {
-            width: 16rem;
-            height: 16rem;
-        }
-        100% {
-            width: 15rem;
-            height: 15rem;
-        }
     }
 }

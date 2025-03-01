@@ -9,6 +9,10 @@
     align-items: center;
     row-gap: 2rem;
 
+    &:not(:last-of-type) {
+        padding-bottom: 5rem;
+    }
+
     & a {
         color: inherit;
     }
@@ -54,7 +58,9 @@
 
 @media (width >= 36em) {
     .project {
-        padding-bottom: 6rem;
+        &:not(:last-of-type) {
+            padding-bottom: 6rem;
+        }
 
         & .image {
             width: 20rem;
@@ -70,7 +76,10 @@
 @media (width >= 62em) {
     .project {
         width: 60%;
-        padding-bottom: 8rem;
+
+        &:not(:last-of-type) {
+            padding-bottom: 8rem;
+        }
 
         & .image {
             width: 30rem;

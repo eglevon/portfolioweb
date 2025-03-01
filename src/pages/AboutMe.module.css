@@ -1,14 +1,14 @@
 .about {
     display: flex;
     flex-direction: column;
-    row-gap: 3rem;
+    row-gap: 5rem;
 
     padding-top: 0.5rem;
 }
 
 @media (width >= 48em) {
     .about {
-        row-gap: 7rem;
+        row-gap: 8rem;
 
         padding-top: 3rem;
     }

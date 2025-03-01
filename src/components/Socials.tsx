@@ -7,7 +7,7 @@ type SocialsProps = {
 function Socials({ name, link, img }: SocialsProps) {
     return (
         <li>
-            <a href={link}>
+            <a href={link} target='_blank'>
                 <img src={img} alt={name} />
             </a>
         </li>

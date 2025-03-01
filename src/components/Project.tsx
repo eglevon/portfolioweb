@@ -16,7 +16,7 @@ function Project({ title, link, img, description, tech, repo }: ProjectProps) {
     return (
         <li className={styles.project}>
             <h3>{title}</h3>
-            <a href={link}>
+            <a href={link} target='_blank'>
                 <img src={img} alt={title} className={styles.image} />
             </a>
             <p>{description}</p>
@@ -25,7 +25,7 @@ function Project({ title, link, img, description, tech, repo }: ProjectProps) {
                     <li key={item}>{item}</li>
                 ))}
             </ul>
-            <a href={repo} className={styles.link}>
+            <a href={repo} target='_blank' className={styles.link}>
                 GitHub repository
                 <img src={isDarkMode ? '../src/assets/arrow-right-light.svg' : '../src/assets/arrow-right.svg'} />
             </a>
