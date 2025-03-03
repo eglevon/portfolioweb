@@ -3,7 +3,7 @@ import useDarkMode from '../hooks/useDarkMode';
 import styles from './ContactPage.module.css';
 
 const contact = [
-    { link: 'mailto:emv@gmail.com', icon: '/src/assets/envelope-icon.svg', iconLight: '/src/assets/envelope-icon-light.svg', text: 'Email: emv@gmail.com' },
+    { link: 'mailto:ev@gmail.com', icon: '/src/assets/envelope-icon.svg', iconLight: '/src/assets/envelope-icon-light.svg', text: 'Email: ev@gmail.com' },
 
     { link: 'https://www.linkedin.com', icon: '/src/assets/linkedin.svg', iconLight: '/src/assets/linkedin-light.svg', text: 'LinkedIn' },
 
@@ -23,7 +23,7 @@ function ContactPage() {
 
                 <li className={styles.location}>
                     <img src={isDarkMode ? '/src/assets/location-light.svg' : '/src/assets/location.svg'} alt='Location' />
-                    <span>Pardubice, Czech Republic</span>
+                    <span>Czech Republic</span>
                 </li>
             </ul>
         </main>

@@ -11,8 +11,7 @@
     transition-duration: 0.5s;
 
     &:hover {
-        width: 10rem;
-        height: 10rem;
+        transform: scale(1.1);
     }
 }
 
@@ -29,6 +28,7 @@
         height: 100%;
         border-radius: 50%;
         border: 2px solid var(--color-dark--0);
+
         object-fit: cover;
     }
 
@@ -41,11 +41,6 @@
     .outerCircle {
         width: 15rem;
         height: 15rem;
-
-        &:hover {
-            width: 16rem;
-            height: 16rem;
-        }
     }
 
     .innerCircle {

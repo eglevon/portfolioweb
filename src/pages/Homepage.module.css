@@ -1,4 +1,6 @@
 .homepage {
+    height: calc(100vh - 3rem - 5rem);
+
     padding-top: 5rem;
 
     display: flex;
