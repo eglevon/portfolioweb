@@ -1,7 +1,7 @@
 .intro {
     display: flex;
     flex-direction: column-reverse;
-    row-gap: 3rem;
+    row-gap: 2rem;
 }
 
 .introText {
@@ -62,17 +62,5 @@
     .image {
         width: 15rem;
         height: 15rem;
-    }
-}
-
-@media (width >= 75em) {
-    .wrapper {
-        margin-right: 6rem;
-    }
-}
-
-@media (width >= 87em) {
-    .wrapper {
-        margin-right: 10rem;
     }
 }

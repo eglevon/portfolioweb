@@ -1,4 +1,6 @@
 .about {
+    max-width: 60rem;
+
     display: flex;
     flex-direction: column;
     row-gap: 5rem;
