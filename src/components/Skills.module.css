@@ -8,19 +8,53 @@
     & > ul {
         display: flex;
         flex-wrap: wrap;
-        column-gap: 1.3rem;
-        row-gap: 2.5rem;
+        column-gap: 0.7rem;
+        row-gap: 2rem;
     }
 
     & li {
         display: flex;
         align-items: center;
         column-gap: 0.5rem;
-        width: 9rem;
+        width: 7rem;
     }
 
     & img {
-        width: 3rem;
+        width: 1.8rem;
+    }
+}
+
+@media (width >= 36em) {
+    .skills {
+        & > ul {
+            column-gap: 1.3rem;
+            row-gap: 2.5rem;
+        }
+
+        & li {
+            width: 9rem;
+        }
+
+        & img {
+            width: 3rem;
+        }
+    }
+}
+
+@media (width >= 36em) {
+    .skills {
+        & > ul {
+            column-gap: 1.3rem;
+            row-gap: 2.5rem;
+        }
+
+        & li {
+            width: 9rem;
+        }
+
+        & img {
+            width: 3rem;
+        }
     }
 }
 
