@@ -7,11 +7,11 @@ function Education() {
             <ul>
                 <li>
                     <p className={styles.title}>Self-Education in Web Development</p>
-                    <p>9/2022 – Present</p>
+                    <p>9/2023 – Present</p>
                 </li>
                 <li>
                     <p className={styles.title}> Lorem, ipsum dolor.</p>
-                    <p>8/2014 – 7/2017</p>
+                    <p>9/2020 – 8/2023</p>
                     <p>Lorem ipsum dolor sit amet consectetur.</p>
                 </li>
             </ul>
